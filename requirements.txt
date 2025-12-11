@@ -5,3 +5,4 @@ regex
 tqdm
 clip @ git+https://github.com/openai/CLIP.git
 Pillow
+gradio>=4.0

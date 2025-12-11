@@ -38,8 +38,7 @@ def image_to_prompt(img):
 
 def launch_webui():
     with gr.Blocks(title="Image to Prompt") as demo:
-        gr.Markdown("# Image to Prompt
-上传图片即可自动生成提示词")
+        gr.Markdown("# Image to Prompt WebUI\n上传图片即可自动生成提示词")
 
         with gr.Row():
             image_input = gr.Image(type="numpy", label="上传图片")

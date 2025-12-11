@@ -10,7 +10,17 @@ def image_to_prompt(image_path):
     image = preprocess(Image.open(image_path)).unsqueeze(0).to(device)
     candidates = [
         "a photo of a person",
-       ...
+        "a landscape photo",
+        "a futuristic scene",
+        "a cute cat",
+        "a dog",
+        "a building",
+        "a product photo",
+        "a cinematic scene",
+        "a high quality image",
+        "a fashion photo",
+        "a digital art anime style",
+        "a hyper realistic render",
     ]
     text_tokens = clip.tokenize(candidates).to(device)
 
